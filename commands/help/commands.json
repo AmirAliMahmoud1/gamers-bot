@@ -1,0 +1,129 @@
+{
+  "help": {
+    "name":"Help",
+    "group":"user",
+    "desc":"Show bot commands",
+    "usage":"help [user-admin] [page]"
+  },
+  "avatar": {
+    "name":"avatar",
+    "group":"user",
+    "desc":"Show youre-other's avatars",
+    "usage":"avatar [user]"
+  },
+  "invite": {
+    "name":"invite",
+    "group":"user",
+    "desc":"give you an invite link to invite the bot",
+    "usage":"invite"
+  },
+  "members": {
+    "name":"members",
+    "group":"user",
+    "desc":"showing current members info",
+    "usage":"members"
+  },
+  "clear": {
+    "name":"clear",
+    "group":"admin",
+    "desc":"clear messages require MANAGE_MESSAGES",
+    "usage":"clear [messages count]"
+  },
+  "server": {
+    "name":"server",
+    "group":"user",
+    "desc":"showing current server info",
+    "usage":"server"
+  },
+  "info": {
+    "name":"info",
+    "group":"user",
+    "desc":"Show bot info",
+    "usage":"info"
+  },
+  "date": {
+    "name":"date",
+    "group":"user",
+    "desc":"showing current time and date",
+    "usage":"date"
+  },
+  "call": {
+    "name":"call",
+    "group":"user",
+    "desc":"send a message to bot's owner",
+    "usage":"call"
+  },
+  "kick": {
+    "name":"kick",
+    "group":"admin",
+    "desc":"kick peoples bot role must be the highest role",
+    "usage":"kick [user]"
+  },
+  "ban": {
+    "name":"ban",
+    "group":"admin",
+    "desc":"kick peoples bot role must be the highest role",
+    "usage":"ban [user]"
+  },
+  "vc": {
+    "name":"vc",
+    "group":"admin",
+    "desc":"create a voice channel",
+    "usage":"vc [channelName]"
+  },
+  "tc": {
+    "name":"tc",
+    "group":"admin",
+    "desc":"create a text channel",
+    "usage":"tc [channelName]"
+  },
+  "warn": {
+    "name":"warn",
+    "group":"admin",
+    "desc":"warn members and send a message to them with the reason",
+    "usage":"warn [user][reason]"
+  },
+  "kill": {
+    "name":"kill",
+    "group":"user",
+    "desc":"rp command",
+    "usage":"kill [user]"
+  },
+  "slap": {
+    "name":"slap",
+    "group":"user",
+    "desc":"rp command",
+    "usage":"slap [user]"
+  },
+  "cry": {
+    "name":"cry",
+    "group":"user",
+    "desc":"rp command",
+    "usage":"cry"
+  },
+  "sleep": {
+    "name":"sleep",
+    "group":"user",
+    "desc":"rp command",
+    "usage":"sleep"
+  },
+  "happy": {
+    "name":"happy",
+    "group":"user",
+    "desc":"rp command",
+    "usage":"happy"
+  },
+  "game": {
+  	"name":"game",
+  	"group":"user",
+  	"desc":"Gets games info",
+  	"usage":"game [game]"
+  },
+  "joke": {
+  	"name":"joke",
+  	"group":"user",
+  	"desc":"gives you random joke (:",
+  	"usage":"joke"
+  }
+
+}
