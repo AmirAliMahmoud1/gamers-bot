@@ -5,6 +5,10 @@ const prefix = ".";
 
 
 
+const DBL = require("dblapi.js");
+const dbl = new DBL('process.env.DBL_TOKEN', client);
+
+
 client.commands = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
@@ -70,4 +74,4 @@ client.on("message", message => {
 
 
 
-client.login("NDM0MzE4NjA0MDUwMjM1Mzkz.DbIq8Q.pGL5AQP_utNlVilVg0R9yZGDUgo");
+client.login("process.env.BOT_TOKEN");
