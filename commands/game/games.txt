@@ -1,1 +1,6 @@
+[minecraft], [leagueoflegends], [roblox], [fortnite], [pubg]
 
+**ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ**
+.game [gamename] | for game info
+
+.call | to ask for new games
