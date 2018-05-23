@@ -1,0 +1,32 @@
+{
+  "minecraft": {
+    "image": "https://www.techpulse.be/wp-content/uploads/sites/15/2017/12/minecraft-hero-og.c5517b7973e1-750x521.jpg",
+    "info": "Minecraft is a sandbox video game created by Swedish game designer Markus **Notch** Persson, later fully developed and published by Mojang, a company he founded. The creative and building aspects of Minecraft allow players to build with a variety of different cubes in a 3D procedurally generated world. Other activities in the game include exploration, resource gathering, crafting, and combat.",
+    "wiki": "https://minecraft.gamepedia.com",
+    "website": "https://minecraft.net"
+  },
+  "leagueoflegends": {
+    "image":"https://i.ytimg.com/vi/BGtROJeMPeE/maxresdefault.jpg",
+    "info":"League of Legends (abbreviated LoL) is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. The game follows a freemium model and is supported by microtransactions, and was inspired by the Warcraft III: The Frozen Throne mod, Defense of the Ancients. In League of Legends, players assume the role of an unseen **summoner** that controls a *champion* with unique abilities and battle against a team of other players or computer-controlled champions. The goal is usually to destroy the opposing team's *nexus*, a structure which lies at the heart of a base protected by defensive structures, although other distinct game modes exist as well. Each League of Legends match is discrete, with all champions starting off fairly weak but increasing in strength by accumulating items and experience over the course of the game. The champions and setting blend a variety of elements, including high fantasy, steampunk, and Lovecraftian horror.",
+    "wiki":"http://leagueoflegends.wikia.com/wiki/League_of_Legends_Wiki",
+    "website":"https://na.leagueoflegends.com/en/"
+  },
+  "roblox": {
+    "image":"https://images.rbxcdn.com/d66ae37d46e00a1ecacfe9531986690a.jpg",
+    "info":"Roblox is a sandbox game which allows players to create their own games using its proprietary engine, Roblox Studio. Games and assets for games are built by using **bricks**, similar to those of lego bricks. Players can use the programming language Lua to manipulate the environment of the game and program their own games.Users are able to advertise and sponsor their own game on the website by bidding. Users are also able to create gamepasses, which can be used to give consumers perks for buying the gamepass. **Developer Products**, which can be purchased unlimited times, are similar to the likes of microtransactions and provides the player with in-game perks. A percentage of the revenue from gamepasses and Developer Products is given to Roblox.",
+    "wiki":"https://wiki.roblox.com",
+    "website":"https://www.roblox.com"
+  },
+  "fortnite": {
+    "image":"https://i.ytimg.com/vi/wGB1aLDR2Es/maxresdefault.jpg",
+    "info":"Fortnite is set in contemporary Earth, where the sudden appearance of a worldwide storm causes 98% of the world's population to disappear, and zombie-like creatures rise to attack the remainder. Considered by Epic as a cross between Minecraft and Left 4 Dead, Fortnite has up to four players cooperating on various missions on randomly-generated maps to collect resources, build fortifications around defensive objectives that are meant to help fight the storm and protect survivors, and construct weapons and traps to engage in combat with waves of these creatures that attempt to destroy the objectives. Players gain rewards through these missions to improve their hero characters, support teams, and arsenal of weapon and trap schematics to be able to take on more difficult missions. The game is supported through microtransactions to purchase in-game currency that can be used towards these upgrades.",
+    "wiki":"https://fortnite.gamepedia.com/Fortnite_Wiki",
+    "website":"https://www.epicgames.com/fortnite/"
+  },
+  "pubg": {
+    "image":"https://steamcdn-a.akamaihd.net/steam/apps/578080/header.jpg",
+    "info":"PlayerUnknown's Battlegrounds (PUBG) is a multiplayer online battle royale game developed and published by PUBG Corporation, a subsidiary of publisher Bluehole. The game is based on previous mods that were created by Brendan **PlayerUnknown** Greene for other games using the film Battle Royale for inspiration, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.",
+    "wiki":"https://pubg.gamepedia.com/PLAYERUNKNOWNS_BATTLEGROUNDS_Wiki",
+    "website":"http://playbattlegrounds.com/"
+  }
+}
