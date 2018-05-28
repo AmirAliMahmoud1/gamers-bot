@@ -64,11 +64,41 @@ if (cmd) cmd.run(client, message, args);
 
 
 client.on("message", message => {
-   if (message.isMentioned(client.user)) return message.channel.send(`do **${prefix}help** to get started` + "\ndm the bot to chat directly with the owner");
+   if (message.isMentioned(client.user)) return message.channel.send(`do **${prefix}help** to get start` + "\ndm the bot to chat directly with the owner");
 
 
 });
 
+
+
+
+client.on('message', message => {
+    if (message.channel.type !== 'dm') return;
+if (message.author.bot) return;
+if (message.content.startsWith(prefix + 'reply'))  {
+
+    let messageArray = message.content.split(" ");
+    let command = messageArray[0];
+    let args = messageArray.slice(1);
+    if (message.author.id !== '269132764576481282') return message.reply(":x: sorry this command is just for bot owner")
+    if (!args[0]) return message.channel.send("please enter the user id")
+    if (!args[1]) return message.channel.send("please enter the message")
+    if (!client.users.get(args[0])) return message.channel.send("Wrong id maybe this user not in mutual servers with this bot")
+    client.users.get(args[0]).send(message.content.split(" ").slice(2).join(' '))
+    message.react("👍")
+}});
+
+
+
+
+client.on('message', message => {
+    if (message.channel.type !== 'dm') return;
+if (message.author.bot) return;
+if (message.content.startsWith(prefix + 'help')) return message.channel.send("please don't use commands here !!!");
+if (message.content.startsWith(prefix + 'reply')) return; {
+    client.users.get("269132764576481282").send(message.author.tag + " | " + message.author.id + "\n" + message)
+}
+});
 
 
 
