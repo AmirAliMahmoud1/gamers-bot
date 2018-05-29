@@ -64,6 +64,7 @@ if (cmd) cmd.run(client, message, args);
 
 
 client.on("message", message => {
+    if (message.author.bot) return;
    if (message.isMentioned(client.user)) return message.channel.send(`do **${prefix}help** to get start` + "\ndm the bot to chat directly with the owner");
 
 
@@ -93,13 +94,12 @@ if (message.content.startsWith(prefix + 'reply'))  {
 
 client.on('message', message => {
     if (message.channel.type !== 'dm') return;
-if (message.author.bot) return;
+if (message.author.id === client.user.id) return;
 if (message.content.startsWith(prefix + 'help')) return message.channel.send("please don't use commands here !!!");
 if (message.content.startsWith(prefix + 'reply')) return; {
     client.users.get("269132764576481282").send(message.author.tag + " | " + message.author.id + "\n" + message)
 }
 });
-
 
 
 
