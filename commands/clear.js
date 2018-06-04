@@ -6,8 +6,8 @@ module.exports.run = async (client, message, args) => {
     if (!message.channel.permissionsFor(client.user).has("MANAGE_MESSAGES")) return message.channel.send("i don't have MANAGE_MESSAGES permission please give me it")
     if (!args[0]) return message.reply("please choose a number")
     if (isNaN(args)) return message.reply("this is not a number")
-    if (args <= 4) return message.reply("  lowes number allowed is 5")
-    if (args >= 101) return message.reply("  highes number allowed is 100 ")
+    if (args <= 4) return message.reply(" lowest number allowed is 5")
+    if (args >= 101) return message.reply(" highest number allowed is 100 ")
 
     var msg;
     msg = parseInt();
