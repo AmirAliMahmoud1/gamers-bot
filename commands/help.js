@@ -111,7 +111,7 @@ module.exports.run = async (client, message, args) => {
                 title:'.help [user / admin]',
                 fields: [{
                     name:commandFound,
-                    value:`**Description:** ${commandDesc}\n**Usage:** ${commandUsage}\n**Group:** ${commandGroup}`
+                    value:`**Description:** ${commandDesc}\n**Usage:** ${prefix}${commandUsage}\n**Group:** ${commandGroup}`
                 }]
             }})
 
