@@ -1,4 +1,4 @@
-[minecraft], [leagueoflegends], [roblox], [fortnite], [pubg]
+[minecraft], [leagueoflegends], [roblox], [fortnite], [pubg], [csgo]
 
 **ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ**
 .game [gamename] | for game info
