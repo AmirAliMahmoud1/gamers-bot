@@ -8,7 +8,7 @@
   "avatar": {
     "name":"avatar",
     "group":"user",
-    "desc":"Show youre-other's avatars",
+    "desc":"Show your or other's avatar",
     "usage":"avatar [user]"
   },
   "invite": {
@@ -20,7 +20,7 @@
   "members": {
     "name":"members",
     "group":"user",
-    "desc":"showing current members info",
+    "desc":"showing current server members info",
     "usage":"members"
   },
   "clear": {
