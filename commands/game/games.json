@@ -28,5 +28,11 @@
     "info":"PlayerUnknown's Battlegrounds (PUBG) is a multiplayer online battle royale game developed and published by PUBG Corporation, a subsidiary of publisher Bluehole. The game is based on previous mods that were created by Brendan **PlayerUnknown** Greene for other games using the film Battle Royale for inspiration, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.",
     "wiki":"https://pubg.gamepedia.com/PLAYERUNKNOWNS_BATTLEGROUNDS_Wiki",
     "website":"http://playbattlegrounds.com/"
+  },
+  "csgo": {
+    "image":"https://www.pcgamesn.com/sites/default/files/counter%20strike%20weapon%20skins_0.jpg",
+    "info":"Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game developed by Hidden Path Entertainment and Valve Corporation. It is the fourth game in the Counter-Strike series and was released for Microsoft Windows, OS X, Xbox 360, and PlayStation 3 in August 2012, with the Linux version released in September 2014. The game pits two teams against each other: the Terrorists and the Counter-Terrorists. Both sides are tasked with eliminating the other while also completing separate objectives, the Terrorists, depending on the game mode, must either plant the bomb or defend the hostages, while the Counter-Terrorists must either prevent the bomb from being planted, defuse the bomb, or rescue the hostages. There are eight game modes, all of which have distinct characteristics specific to that mode.",
+    "wiki":"No wiki !",
+    "website":"http://www.counter-strike.net/"
   }
 }
