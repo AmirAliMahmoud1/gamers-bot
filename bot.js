@@ -34,7 +34,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | 0.6 update soon!');
+client.user.setActivity('.help | No events. update will take along time');
 console.log(client.commands)
 
 });
