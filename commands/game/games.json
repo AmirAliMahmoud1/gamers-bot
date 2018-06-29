@@ -3,42 +3,56 @@
     "image": "https://www.techpulse.be/wp-content/uploads/sites/15/2017/12/minecraft-hero-og.c5517b7973e1-750x521.jpg",
     "info": "Minecraft is a sandbox video game created by Swedish game designer Markus **Notch** Persson, later fully developed and published by Mojang, a company he founded. The creative and building aspects of Minecraft allow players to build with a variety of different cubes in a 3D procedurally generated world. Other activities in the game include exploration, resource gathering, crafting, and combat.",
     "wiki": "https://minecraft.gamepedia.com",
-    "website": "https://minecraft.net"
+    "website": "https://minecraft.net",
+    "Requested_By":"Bot"
   },
   "leagueoflegends": {
     "image":"https://i.ytimg.com/vi/BGtROJeMPeE/maxresdefault.jpg",
     "info":"League of Legends (abbreviated LoL) is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. The game follows a freemium model and is supported by microtransactions, and was inspired by the Warcraft III: The Frozen Throne mod, Defense of the Ancients. In League of Legends, players assume the role of an unseen **summoner** that controls a *champion* with unique abilities and battle against a team of other players or computer-controlled champions. The goal is usually to destroy the opposing team's *nexus*, a structure which lies at the heart of a base protected by defensive structures, although other distinct game modes exist as well. Each League of Legends match is discrete, with all champions starting off fairly weak but increasing in strength by accumulating items and experience over the course of the game. The champions and setting blend a variety of elements, including high fantasy, steampunk, and Lovecraftian horror.",
     "wiki":"http://leagueoflegends.wikia.com/wiki/League_of_Legends_Wiki",
-    "website":"https://na.leagueoflegends.com/en/"
+    "website":"https://na.leagueoflegends.com/en/",
+    "Requested_By":"Bot"
   },
   "roblox": {
     "image":"https://images.rbxcdn.com/d66ae37d46e00a1ecacfe9531986690a.jpg",
     "info":"Roblox is a sandbox game which allows players to create their own games using its proprietary engine, Roblox Studio. Games and assets for games are built by using **bricks**, similar to those of lego bricks. Players can use the programming language Lua to manipulate the environment of the game and program their own games.Users are able to advertise and sponsor their own game on the website by bidding. Users are also able to create gamepasses, which can be used to give consumers perks for buying the gamepass. **Developer Products**, which can be purchased unlimited times, are similar to the likes of microtransactions and provides the player with in-game perks. A percentage of the revenue from gamepasses and Developer Products is given to Roblox.",
     "wiki":"https://wiki.roblox.com",
-    "website":"https://www.roblox.com"
+    "website":"https://www.roblox.com",
+    "Requested_By":"Bot"
   },
   "fortnite": {
     "image":"https://i.ytimg.com/vi/wGB1aLDR2Es/maxresdefault.jpg",
     "info":"Fortnite is set in contemporary Earth, where the sudden appearance of a worldwide storm causes 98% of the world's population to disappear, and zombie-like creatures rise to attack the remainder. Considered by Epic as a cross between Minecraft and Left 4 Dead, Fortnite has up to four players cooperating on various missions on randomly-generated maps to collect resources, build fortifications around defensive objectives that are meant to help fight the storm and protect survivors, and construct weapons and traps to engage in combat with waves of these creatures that attempt to destroy the objectives. Players gain rewards through these missions to improve their hero characters, support teams, and arsenal of weapon and trap schematics to be able to take on more difficult missions. The game is supported through microtransactions to purchase in-game currency that can be used towards these upgrades.",
     "wiki":"https://fortnite.gamepedia.com/Fortnite_Wiki",
-    "website":"https://www.epicgames.com/fortnite/"
+    "website":"https://www.epicgames.com/fortnite/",
+    "Requested_By":"Bot"
   },
   "pubg": {
     "image":"https://steamcdn-a.akamaihd.net/steam/apps/578080/header.jpg",
     "info":"PlayerUnknown's Battlegrounds (PUBG) is a multiplayer online battle royale game developed and published by PUBG Corporation, a subsidiary of publisher Bluehole. The game is based on previous mods that were created by Brendan **PlayerUnknown** Greene for other games using the film Battle Royale for inspiration, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.",
     "wiki":"https://pubg.gamepedia.com/PLAYERUNKNOWNS_BATTLEGROUNDS_Wiki",
-    "website":"http://playbattlegrounds.com/"
+    "website":"http://playbattlegrounds.com/",
+    "Requested_By":"Bot"
   },
   "csgo": {
     "image":"https://www.pcgamesn.com/sites/default/files/counter%20strike%20weapon%20skins_0.jpg",
     "info":"Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game developed by Hidden Path Entertainment and Valve Corporation. It is the fourth game in the Counter-Strike series and was released for Microsoft Windows, OS X, Xbox 360, and PlayStation 3 in August 2012, with the Linux version released in September 2014. The game pits two teams against each other: the Terrorists and the Counter-Terrorists. Both sides are tasked with eliminating the other while also completing separate objectives, the Terrorists, depending on the game mode, must either plant the bomb or defend the hostages, while the Counter-Terrorists must either prevent the bomb from being planted, defuse the bomb, or rescue the hostages. There are eight game modes, all of which have distinct characteristics specific to that mode.",
     "wiki":"No wiki !",
-    "website":"http://www.counter-strike.net/"
+    "website":"http://www.counter-strike.net/",
+    "Requested_By":"Monstersick"
   },
   "mta": {
     "image":"https://limitlesshost.net/images/mtasa.jpg",
     "info":"Multi Theft Auto (MTA) is a multiplayer modification for the Microsoft Windows version of Rockstar North games Grand Theft Auto III, Grand Theft Auto: Vice City and Grand Theft Auto: San Andreas that adds online multiplayer functionality. For Grand Theft Auto: San Andreas, the mod also serves as a derivative engine to Rockstar's interpretation of RenderWare.",
     "wiki":"https://wiki.multitheftauto.com/wiki/Main_Page",
-    "website":"https://mtasa.com/"
-  }
+    "website":"https://mtasa.com/",
+    "Requested_By":"He don't want to show his/her name"
+  },
+  "respawnables": {
+    "image":"https://i.ytimg.com/vi/_OSkM8F0DSA/maxresdefault.jpg",
+    "info":"The Respawnables is a third-person shooter, 4-star rated game app available for iOS and Android. This game is developed by Digital Legends Entertainment SL and sold by Zynga. It is downloadable in the App Store for iOS devices and Google Play for Android devices.\nThe player's goal in the game is to achieve all of the missions in Missions Mode and collect all items available, such as weapons, heads, bodies, and legs. All of this can be found and bought in the shop. Once the player reaches level 50, which is the max level, he/she would unlock all items available in the game for cash or gold, which they can use in Multiplayer, where the player can choose two modes to fight other players in any level. They can team up with other players and fight other teams in Team Vs., or fight every player in a match in Free For All. There are also achievements that will give points to the player's Game Center account when won.",
+    "wiki":"http://respawnables.wikia.com",
+    "website":"No websites..!",
+    "Requested_By":"DAWOOD AHMED"
+    }
 }
