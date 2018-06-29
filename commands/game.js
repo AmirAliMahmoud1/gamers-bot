@@ -12,6 +12,7 @@ module.exports.run = async (client, message, args) => {
         .setDescription(games[args[0]].info)
         .addField("Website", games[args[0]].website)
         .addField("wiki", games[args[0]].wiki)
+        .addField("Requsted By", games[args[0]].Requested_By)
         .setColor('RANDOM')
         .setImage(games[args[0]].image)
     message.channel.send({embed})
