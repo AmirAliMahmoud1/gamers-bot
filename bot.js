@@ -34,7 +34,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | i love you ^_^');
+client.user.setActivity('.help | 0.6 update soon!');
 console.log(client.commands)
 
 });
@@ -55,13 +55,16 @@ let command = messageArray[0];
 let args = messageArray.slice(1);
 
 let cmd = client.commands.get(command.slice(prefix.length));
-if (cmd) cmd.run(client, message, args);
+if (cmd) { cmd.run(client, message, args);
+    console.log("(" + command + ") command just used")
+
+}
 });
 
 
 
 
-
+//Addong don't touch
 
 client.on("message", message => {
     if (message.author.bot) return;
@@ -71,7 +74,7 @@ client.on("message", message => {
 });
 
 
-
+//reply and dm chat settings
 
 client.on('message', message => {
     if (message.channel.type !== 'dm') return;
@@ -87,18 +90,11 @@ if (message.content.startsWith(prefix + 'reply'))  {
     if (!client.users.get(args[0])) return message.channel.send("Wrong id maybe this user not in mutual servers with this bot")
     client.users.get(args[0]).send(message.content.split(" ").slice(2).join(' '))
     message.react("👍")
-}});
-
-
-
-
-client.on('message', message => {
-    if (message.channel.type !== 'dm') return;
+} else
 if (message.author.id === client.user.id) return;
 if (message.content.startsWith(prefix + 'help')) return message.channel.send("please don't use commands here !!!");
-if (message.content.startsWith(prefix + 'reply')) return; {
+if (message.content.startsWith(prefix + 'reply')) return;
     client.users.get("269132764576481282").send(message.author.tag + " | " + message.author.id + "\n" + message)
-}
 });
 
 
