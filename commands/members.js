@@ -10,8 +10,7 @@ online:   ${message.guild.members.filter(m => m.presence.status == 'online').siz
 offline:   ${message.guild.members.filter(m => m.presence.status == 'offline').size} 
 idle:      ${message.guild.members.filter(m => m.presence.status == 'idle').size} 
 DND:      ${message.guild.members.filter(m => m.presence.status == 'dnd').size} 
-everyone:  ${message.guild.memberCount}
-Bot users:  ${client.users.size}`)
+everyone:  ${message.guild.memberCount}`)
     message.channel.send({embed});
 
 }
