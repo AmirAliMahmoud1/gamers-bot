@@ -102,7 +102,7 @@ module.exports.run = async (client, message, args) => {
 
         // Lets post in chat if nothing is found!
         if (commandFound === '') {
-            message.channel.send("**.help user** : for user commands\n**.help admin** : for admin commands\n**.help [command]** : per command help")
+            message.channel.send("**.help user** : for user commands\n**.help admin** : for admin commands")
 
         }
 
