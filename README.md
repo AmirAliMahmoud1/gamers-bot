@@ -10,7 +10,7 @@ use that channel when you need help only or when you need to give us a suggestio
 
 - [GamersBot](https://discordbots.org/bot/427751395123265546)
 
-to support us just share Gamers bot to your friends 
+to support us just share Gamers bot with your friends 
 
 ---
 # Bot commands
