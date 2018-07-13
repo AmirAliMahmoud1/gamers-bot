@@ -34,7 +34,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | tell your friends about me (:');
+client.user.setActivity('.help | 0.6 update soon!');
 console.log(client.commands)
 
 });
@@ -77,14 +77,13 @@ client.on("message", message => {
 //reply and dm chat settings
 
 client.on('message', message => {
-    if (message.channel.type !== 'dm') return;
 if (message.author.bot) return;
 if (message.content.startsWith(prefix + 'reply'))  {
 
     let messageArray = message.content.split(" ");
     let command = messageArray[0];
     let args = messageArray.slice(1);
-    if (message.author.id !== '269132764576481282') return message.reply(":x: sorry this command is just for bot owner")
+    if (message.author.id !== '269132764576481282' && message.author.id !== '405436409831227404') return message.reply(":x: sorry this command is just for bot owner")
     if (!args[0]) return message.channel.send("please enter the user id")
     if (!args[1]) return message.channel.send("please enter the message")
     if (!client.users.get(args[0])) return message.channel.send("Wrong id maybe this user not in mutual servers with this bot")
@@ -92,9 +91,10 @@ if (message.content.startsWith(prefix + 'reply'))  {
     message.react("👍")
 } else
 if (message.author.id === client.user.id) return;
+if (message.channel.type !== 'dm') return;
 if (message.content.startsWith(prefix + 'help')) return message.channel.send("please don't use commands here !!!");
 if (message.content.startsWith(prefix + 'reply')) return;
-    client.users.get("269132764576481282").send(message.author.tag + " | " + message.author.id + "\n" + message)
+    client.channels.get("467207782081232920").send(message.author.tag + " | " + message.author.id + "\n" + message)
 });
 
 
