@@ -34,7 +34,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | 0.6 update soon!');
+client.user.setActivity('.help | I LOVE YOU');
 console.log(client.commands)
 
 });
