@@ -11,6 +11,7 @@ use that channel when you need help only or when you need to give us a suggestio
 - [GamersBot](https://discordbots.org/bot/427751395123265546)
 
 to support us just share Gamers bot with your friends 
+[url=https://up.top4top.net/][img]https://a.top4top.net/p_924vx89m1.png[/img][/url]
 
 ---
 # Bot commands
