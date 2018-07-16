@@ -34,7 +34,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | I LOVE YOU');
+client.user.setActivity('.help | new command on the way ---');
 console.log(client.commands)
 
 });
@@ -56,7 +56,7 @@ let args = messageArray.slice(1);
 
 let cmd = client.commands.get(command.slice(prefix.length));
 if (cmd) { cmd.run(client, message, args);
-    console.log("(" + command + ") command just used")
+    console.log("(" + command + ") command just used in " + message.guild.name + " server")
 
 }
 });
