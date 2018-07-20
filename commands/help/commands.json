@@ -124,6 +124,11 @@
   	"group":"user",
   	"desc":"gives you random joke (:",
   	"usage":"joke"
+  },
+  "cat": {
+    "name":"cat",
+    "group":"user",
+    "desc":"send random cat photo",
+    "usage":"cat"
   }
-
 }
