@@ -34,7 +34,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | new command on the way ---');
+client.user.setActivity('.help | .cat command added');
 console.log(client.commands)
 
 });
