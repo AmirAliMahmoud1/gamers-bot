@@ -1,6 +1,12 @@
+const Discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
 
-    message.channel.send("```md\n[bot invite link](https://goo.gl/aQrNG2)\n[support server](https://discord.gg/DjTubAX)```")
+    const embed = new Discord.RichEmbed()
+        .setTitle("you asked for it. you got it.")
+        .setColor('RANDOM')
+        .addField("Bot invite link", "[Click Here](https://goo.gl/aQrNG2)")
+        .addField("Support server", "[Click Here](https://discord.gg/DjTubAX)")
+    message.channel.send({embed});
 
 }
 
