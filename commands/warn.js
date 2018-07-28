@@ -9,8 +9,20 @@ module.exports.run = async (client, message, args) => {
         return message.reply("Please mention a valid member of this server or type his id\n-\n**Example**: .warn @member spamming");
     if (!message.content.split(" ").slice(2).join(' ')) reason = "No reason !";
     if (message.content.split(" ").slice(2).join(' ')) reason = message.content.split(" ").slice(2).join(' ');
-    member.send("you have warned in **" + message.guild.name + "** server\n" + '```md\n[reason](' + reason + ')\n[warn author](' + message.author.tag + ')```');
-    message.channel.send(member + " has warned :white_check_mark:\n" + '```md\n[reason](' + reason + ')\n[warn author](' + message.author.tag + ')```')
+
+
+
+
+        const embed = new Discord.RichEmbed()
+        .setTitle("Oooops. check this please")
+        .setColor('RANDOM')
+        .setDescription("you got warned in **" + message.guild.name + "** for the next reason")
+        .addField("Reason", reason)
+        .addField("Warner/warn author", message.author.tag)
+
+
+    member.send(embed);
+    message.channel.send(member + " got warned :white_check_mark:")
 
 }
 
