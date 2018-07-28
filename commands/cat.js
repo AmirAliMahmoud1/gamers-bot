@@ -3,7 +3,10 @@ const snekfetch = require("snekfetch");
 
 module.exports.run = async (client, message, args) => {
 
-    let catImg = (await snekfetch.get("http://aws.random.cat/meow")).body.file;
+	    let msg = await message.channel.send("``Searching for cute cat...!``")
+
+
+    let catImg = (await snekfetch.get("https://nekos.life/api/v2/img/meow")).body.url;
     if (!catImg) return message.channel.send("Erorr: can't find any cat.\nDM the bot if this error continued");
 
 
@@ -12,6 +15,8 @@ module.exports.run = async (client, message, args) => {
         .setColor('RANDOM')
         .setImage(catImg)
     message.channel.send({embed});
+
+    msg.delete();
 
 }
 
