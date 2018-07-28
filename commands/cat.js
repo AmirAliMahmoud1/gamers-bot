@@ -1,3 +1,4 @@
+const Discord = require("discord.js");
 const snekfetch = require("snekfetch");
 
 module.exports.run = async (client, message, args) => {
@@ -7,11 +8,12 @@ module.exports.run = async (client, message, args) => {
     let catImg = (await snekfetch.get("http://aws.random.cat/meow")).body.file;
     if (!catImg) return message.channel.send("Erorr: can't find any cat.\nDM the bot if this error continued");
 
-    await message.channel.send({files: [
-            {
-                attachment: catImg,
-                name: catImg.split("/").pop()
-            }]});
+
+    const embed = new Discord.RichEmbed()
+        .setTitle("Meeeow")
+        .setColor('RANDOM')
+        .setImage(catImg)
+    message.channel.send({embed});
 
             msg.delete();
 
