@@ -3,7 +3,7 @@
     "name":"Help",
     "group":"user",
     "desc":"Show bot commands",
-    "usage":"help [user-admin] [page]"
+    "usage":"help [user-admin]"
   },
   "avatar": {
     "name":"avatar",
