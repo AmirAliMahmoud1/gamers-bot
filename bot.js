@@ -10,6 +10,7 @@ const dbl = new DBL(process.env.DBL_TOKEN, client);
 
 
 client.commands = new Discord.Collection();
+const talkedRecently = new Set();
 
 fs.readdir("./commands/", (err, files) => {
     if(err) console.error(err);
@@ -50,15 +51,27 @@ client.on('message', message => {
     if(!message.content.startsWith(prefix))return;
 if(message.channel.type === 'dm') return;
 if (message.author.bot) return;
-let messageArray = message.content.split(" ");
-let command = messageArray[0];
-let args = messageArray.slice(1);
+    
+if (talkedRecently.has(message.author.id)) {
+    message.channel.send("The next user have to wait at least 5 secounds between using commands : " + message.author + "\nthe cooldown won't work for who have **ADMINSTRATOR** permission");
+} else {
 
-let cmd = client.commands.get(command.slice(prefix.length));
-if (cmd) { cmd.run(client, message, args);
+    let messageArray = message.content.split(" ");
+    let command = messageArray[0];
+    let args = messageArray.slice(1);
+    
+    let cmd = client.commands.get(command.slice(prefix.length));
+    if (cmd) { cmd.run(client, message, args);
     console.log("(" + command + ") command just used in " + message.guild.name + " server")
-
+if (!message.member.hasPermission("ADMINISTRATOR")){
+    talkedRecently.add(message.author.id);
+  }
+setTimeout(() => {
+  // Removes the user from the set after 5 sec
+  talkedRecently.delete(message.author.id);
+}, 5000);
 }
+}    
 });
 
 
