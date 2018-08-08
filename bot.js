@@ -34,7 +34,8 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | after 0.5-1 week i will add new command');
+//client.user.setActivity('.help | Adding new command 1-5 mins');
+client.user.setStatus('dnd', '.help | Adding new command 1-5 mins') 
 console.log(client.commands)
 
 });
