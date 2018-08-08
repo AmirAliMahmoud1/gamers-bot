@@ -130,5 +130,11 @@
     "group":"user",
     "desc":"send random cat photo",
     "usage":"cat"
+  },
+  "ask": {
+    "name":"ask",
+    "group":"user",
+    "desc":"ask random question",
+    "usage":"ask"
   }
 }
