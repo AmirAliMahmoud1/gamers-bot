@@ -35,7 +35,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | new questions add to .ask'); 
+client.user.setActivity('.help | new questions added to .ask'); 
 console.log(client.commands)
 
 });
@@ -84,7 +84,7 @@ setTimeout(() => {
 
 client.on("message", message => {
     if (message.author.bot) return;
-   if (message.isMentioned(client.user)) return message.channel.send(`do **${prefix}help** to get start` + "\ndm the bot to chat directly with the owner");
+   if (message.isMentioned(client.user) && message.content === `<@${client.user.id}>`) return message.channel.send(`do **${prefix}help** to get start` + "\ndm the bot to chat directly with the owner");
 
 
 });
