@@ -35,7 +35,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | New .ask command (not completed just test it)'); 
+client.user.setActivity('.help | new questions add to .ask'); 
 console.log(client.commands)
 
 });
