@@ -11,7 +11,6 @@ const dbl = new DBL(process.env.DBL_TOKEN, client);
 
 client.commands = new Discord.Collection();
 const talkedRecently = new Set();
-client.blockList = require("./commands/block/list.json");
 
 
 fs.readdir("./commands/", (err, files) => {
