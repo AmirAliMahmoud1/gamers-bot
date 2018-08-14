@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const mysql = require("mysql");
 const client = new Discord.Client();
 const fs = require('fs');
 const prefix = ".";
@@ -36,7 +37,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | new questions added to .ask'); 
+client.user.setActivity('.help | share me <3'); 
 console.log(client.commands)
 
 });
