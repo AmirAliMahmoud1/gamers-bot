@@ -131,7 +131,6 @@ con.query(`SELECT * FROM blockList WHERE id = '${message.author.id}'`, (err, row
     const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username, message.author.avatarURL)
 .addField("The message:", message)
-.setColor('RANDOM')
 .addField("The id : " + message.author.id, message.author.tag)
 
     client.channels.get("467207782081232920").send({embed})
