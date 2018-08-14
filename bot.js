@@ -112,8 +112,6 @@ if (message.author.id === client.user.id) return;
 if (message.channel.type !== 'dm') return;
 if (message.content.startsWith(prefix + 'help')) return message.channel.send("please don't use commands here !!!");
 if (message.content.startsWith(prefix + 'reply')) return;
-if (client.blockList[message.author.id].blocked === "true") return message.channel.send("**You are blocked** \n\n``join the support server to ask for unblock messages``")
-
 const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username, message.author.avatarURL)
 .addField("The message:", message)
