@@ -92,6 +92,8 @@ var con = mysql.createConnection({
 
 
 
+
+
 //Addong don't touch
 
 client.on("message", message => {
@@ -122,13 +124,19 @@ if (message.author.id === client.user.id) return;
 if (message.channel.type !== 'dm') return;
 if (message.content.startsWith(prefix + 'help')) return message.channel.send("please don't use commands here !!!");
 if (message.content.startsWith(prefix + 'reply')) return;
-const embed = new Discord.RichEmbed()
+
+con.query(`SELECT * FROM blockList WHERE id = '${message.author.id}'`, (err, rows) => { 
+    if (rows[0].blocked == '1') return message.channel.send("**YOU ARE BLOCKED**\n--\nyou can join the support server to ask for unblock to be albe to call bot owners")
+
+    const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username, message.author.avatarURL)
 .addField("The message:", message)
 .setColor('RANDOM')
 .addField("The id : " + message.author.id, message.author.tag)
 
     client.channels.get("467207782081232920").send({embed})
+
+});
 });
 
 
