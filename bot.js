@@ -16,8 +16,7 @@ client.on("guildCreate", message => {
     let serverat = client.guilds.size
     let id = client.user.id
 snekfetch.post(`https://bots.discord.pw/api/bots/${id}/stats`)
-    .set('Authorization', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIyNjkxMzI3NjQ1NzY0ODEyODIiLCJyYW5kIjoyOTAsImlhdCI6MTUzNDM0MDMyOX0.jxoIBSK2Lp0hVOICrYuTkT9cPF23D3amgpSbMCUGOfg")
-    .send({
+    .set('Authorization', process.env.DB_KEY
         "server_count": serverat
     })
     .then(() => console.log(`Posted to db.`))
