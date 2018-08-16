@@ -37,7 +37,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | share me <3'); 
+client.user.setActivity('.help | mcskin command will be added at EID (Eid moubark Muslims)'); 
 console.log(client.commands)
 
 });
