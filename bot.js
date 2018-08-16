@@ -12,7 +12,7 @@ const dbl = new DBL(process.env.DBL_TOKEN, client);
 
 
 
-client.on("guildCreate", message => {
+client.on("guildCreate", guild => {
     let serverat = client.guilds.size
     let id = client.user.id
 snekfetch.post(`https://bots.discord.pw/api/bots/${id}/stats`)
