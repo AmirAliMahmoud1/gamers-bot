@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
     .setColor('RANDOM')
     .setImage(skin)
     .setThumbnail(`https://crafatar.com/skins/${useruuid}`)
-    .setFooter(`Thank you to (Crafatar) for providing avatars.`)
+    .setFooter(`Thank you to [Crafatar] for providing avatars.`)
 message.channel.send({embed});
 
 
