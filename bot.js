@@ -57,7 +57,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | .mcskin released because of 100 servers <3)'); 
+client.user.setActivity('.help | .mcskin released because of 100 servers <3 -- (may you will find some bugs)'); 
 console.log(client.commands)
 
 });
