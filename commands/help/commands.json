@@ -65,53 +65,17 @@
     "desc":"kick peoples bot role must be the highest role",
     "usage":"ban [user]"
   },
-  "vc": {
-    "name":"vc",
-    "group":"admin",
-    "desc":"create a voice channel",
-    "usage":"vc [channelName]"
-  },
-  "tc": {
-    "name":"tc",
-    "group":"admin",
-    "desc":"create a text channel",
-    "usage":"tc [channelName]"
-  },
   "warn": {
     "name":"warn",
     "group":"admin",
     "desc":"warn members and send a message to them with the reason",
     "usage":"warn [user][reason]"
   },
-  "kill": {
-    "name":"kill",
+  "rp": {
+    "name":"rp",
     "group":"user",
-    "desc":"rp command",
-    "usage":"kill [user]"
-  },
-  "slap": {
-    "name":"slap",
-    "group":"user",
-    "desc":"rp command",
-    "usage":"slap [user]"
-  },
-  "cry": {
-    "name":"cry",
-    "group":"user",
-    "desc":"rp command",
-    "usage":"cry"
-  },
-  "sleep": {
-    "name":"sleep",
-    "group":"user",
-    "desc":"rp command",
-    "usage":"sleep"
-  },
-  "happy": {
-    "name":"happy",
-    "group":"user",
-    "desc":"rp command",
-    "usage":"happy"
+    "desc":"rp commands (kill - slap - cry - sleep - happy)",
+    "usage":"rp kill @member"
   },
   "game": {
   	"name":"game",
