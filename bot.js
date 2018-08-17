@@ -57,9 +57,9 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | mcskin command will be added at EID (Eid moubark Muslims)'); 
+//client.user.setActivity('.help | mcskin command will be added at EID (Eid moubark Muslims)'); 
+        client.user.setStatus('dnd', "updating --")
 console.log(client.commands)
-    client.user.setStatus('dnd', "updating --")
 
 });
 
