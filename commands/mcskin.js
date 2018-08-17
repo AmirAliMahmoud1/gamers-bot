@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
     if (!useruuid) return message.channel.send("Can't find **" + args[0] + "** in mojang files, maybe it's wrong name !");
  
 
-    let skin = ("https://crafatar.com/renders/body/" + useruuid + ".jpg")
+    let skin = ("https://crafatar.com/renders/body/" + useruuid + "?overlay")
 
     if (!skin) return message.channel.send("Error : is this account very new ?")
 
