@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
     const embed = new Discord.RichEmbed()
         .setTitle("**Gamers bot** info")
         .setDescription("gamers bot is Mod bot including some simple game and fun commands. we are working on some games commands like (Minecraft, League of Legends)")
-        .addField("bot version: :1234:")
+        .addField("bot version: :1234:", "1")
         .addField("bot id: :link:", "427751395123265546")
         .addField("Library:", "discord.js")
         .addField("servers", client.guilds.size)
