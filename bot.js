@@ -59,7 +59,7 @@ client.on('ready', () => {
 console.log(`on ${client.guilds.size} servers`);
 client.user.setActivity('.help | mcskin command will be added at EID (Eid moubark Muslims)'); 
 console.log(client.commands)
-    client.user.setStatus('idle', "updating --")
+    client.user.setStatus('dnd', "updating --")
 
 });
 
