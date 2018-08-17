@@ -83,12 +83,6 @@
   	"desc":"Gets games info",
   	"usage":"game [game]"
   },
-  "joke": {
-  	"name":"joke",
-  	"group":"user",
-  	"desc":"gives you random joke (:",
-  	"usage":"joke"
-  },
   "cat": {
     "name":"cat",
     "group":"user",
