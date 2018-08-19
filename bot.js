@@ -81,7 +81,7 @@ client.on('message', message => {
     if(message.channel.type === 'dm') return;
     con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => {
         var prefix = '';
-        if (!rows[0] && !rows[0].prefix) {
+        if (!rows[0]) {
             prefix = ".";
         } else {
             prefix = rows[0].prefix;
@@ -127,7 +127,7 @@ client.on("message", message => {
     if(message.channel.type === 'dm') return;
     con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => {
         var prefix = '';
-        if (!rows[0] && !rows[0].prefix) {
+        if (!rows[0]) {
             prefix = ".";
         } else {
             prefix = rows[0].prefix;
