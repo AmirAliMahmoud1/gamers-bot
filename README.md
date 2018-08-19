@@ -62,9 +62,10 @@ we will answer as soon as we can
 
 we will answer by the bot (the bot will response)
 
-some help for bot commands
+support server 
 --
-to add a game to `.game` command dm the bot with game name and your name
+[Click Here](https://discord.gg/DjTubAX)
+or use this code `DjTubAX`
 
 ---
 
