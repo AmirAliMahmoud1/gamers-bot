@@ -119,12 +119,13 @@ setTimeout(() => {
 
 client.on("message", message => {
     if (message.author.bot) return;
-    con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => { 
+
+
+   if (message.isMentioned(client.user) && message.content === `<@${client.user.id}>`) {
+           con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => { 
 
         if (!rows[0].prefix) prefix = ".";
         if (rows[0].prefix) prefix = rows[0].prefix;
-
-   if (message.isMentioned(client.user) && message.content === `<@${client.user.id}>`) {
        message.channel.send(`Current server prefix is **${prefix}**\nDo ${prefix}help to get start`);
 
    }
