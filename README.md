@@ -34,6 +34,7 @@ to support us just share Gamers bot with your friends
 | cat | .cat | MEOW Random cats | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/cat.png) |
 | ask | .ask | ask you random question | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/ask.png) |
 | mcskin | .mcskin [minecraft account username] | find minecraft skins | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/mcskin.png) |
+| fstats | .fstats [username] | getting fortnite player stats | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/fstats.png) |
 
 - Hint
 
