@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const fs = require('fs');
 const snekfetch = require("snekfetch");
 
+const prefix = ".";
 
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL_TOKEN, client);
