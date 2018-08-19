@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 const mysql = require("mysql");
 const client = new Discord.Client();
 const fs = require('fs');
-const prefix = ".";
 const snekfetch = require("snekfetch");
 
 
