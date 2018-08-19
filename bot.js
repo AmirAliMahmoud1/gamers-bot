@@ -163,8 +163,9 @@ if (message.channel.type !== 'dm') return;
 if (message.content.startsWith('.reply')) return;
 
 con.query(`SELECT * FROM blockList WHERE id = '${message.author.id}'`, (err, rows) => { 
-    if (rows[0].blocked == '1') return message.channel.send("**YOU ARE BLOCKED**\n--\nyou can join the support server to ask for unblock to be able to call bot owners")
-
+    if (rows[0]) {
+        if (rows[0].blocked == '1') return message.channel.send("**YOU ARE BLOCKED**\n--\nyou can join the support server to ask for unblock to be able to call bot owners")
+    }
     const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username, message.author.avatarURL)
 .addField("The message:", message)
