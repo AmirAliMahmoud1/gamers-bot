@@ -76,10 +76,12 @@ console.log(client.commands)
 
 
 client.on('message', message => {
-    con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => { 
+        let guildID = message.guild.id;
 
-        if (!rows.prefix) prefix = ".";
-        if (rows.prefix) prefix = rows.prefix;
+    con.query(`SELECT * FROM prefixes WHERE id = '${guildID}'`, (err, rows) => { 
+
+        if(rows.length < 1) prefix = ".";
+        if (rows[0].prefix) prefix = rows[0].prefix;
 
         if (err) throw err;
     if(!message.content.startsWith(prefix))return;
