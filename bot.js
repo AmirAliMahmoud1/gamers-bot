@@ -127,7 +127,7 @@ client.on("message", message => {
         if (!rows[0].prefix) prefix = ".";
         if (rows[0].prefix) prefix = rows[0].prefix;
        message.channel.send(`Current server prefix is **${prefix}**\nDo ${prefix}help to get start`);
-
+    })
    }
 
     });
