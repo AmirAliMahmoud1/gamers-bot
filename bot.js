@@ -155,8 +155,7 @@ if (message.content.startsWith('.reply'))  {
 } else
 if (message.author.id === client.user.id) return;
 if (message.channel.type !== 'dm') return;
-if (message.content.startsWith(prefix + 'help')) return message.channel.send("please don't use commands here !!!");
-if (message.content.startsWith(prefix + 'reply')) return;
+if (message.content.startsWith('.reply')) return;
 
 con.query(`SELECT * FROM blockList WHERE id = '${message.author.id}'`, (err, rows) => { 
     if (rows[0].blocked == '1') return message.channel.send("**YOU ARE BLOCKED**\n--\nyou can join the support server to ask for unblock to be able to call bot owners")
