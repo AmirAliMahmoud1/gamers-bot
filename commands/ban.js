@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    if(message.content.startsWith(prefix + 'ban')) {
         if (!message.member.hasPermission('BAN_MEMBERS') && message.author.id !== "269132764576481282") return message.channel.send("you don't have **BAN_MEMBERS** permission");
         if (!message.channel.permissionsFor(client.user).has("BAN_MEMBERS")) return message.channel.send("i don't have **BAN_MEMBERS** permission please give me it")
     
@@ -22,7 +21,6 @@ module.exports.run = async (client, message, args) => {
         ;
         message.reply(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
 
-}
 }
 
 module.exports.help = {
