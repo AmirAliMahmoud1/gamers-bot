@@ -3,8 +3,6 @@ const mysql = require("mysql");
 const client = new Discord.Client();
 const fs = require('fs');
 const snekfetch = require("snekfetch");
-const prefix = ".";
-
 
 
 const DBL = require("dblapi.js");
