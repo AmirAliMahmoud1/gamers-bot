@@ -65,7 +65,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | .setprefix added dm the bot if there was any error'); 
+client.user.setActivity('.help | fortine stats command (.fnstats) will be added'); 
 console.log(client.commands)
 
 });
