@@ -80,6 +80,8 @@ console.log(client.commands)
 client.on('message', message => {
     if(message.channel.type === 'dm') return;
     con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => {
+        if (!rows[0]) return;
+        if (rows[0]) console.log(rows[0])
 
         var prefix = '';
         if (rows[0].prefix < 1) {
