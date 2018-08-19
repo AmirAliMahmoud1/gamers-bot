@@ -80,9 +80,8 @@ console.log(client.commands)
 client.on('message', message => {
     if(message.channel.type === 'dm') return;
     con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => {
-        if (!rows[0]) return;
         var prefix = '';
-        if (rows[0].prefix < 1) {
+        if (!rows[0] && !rows[0].prefix) {
             prefix = ".";
         } else {
             prefix = rows[0].prefix;
@@ -127,9 +126,8 @@ setTimeout(() => {
 client.on("message", message => {
     if(message.channel.type === 'dm') return;
     con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => {
-        if (!rows[0]) return;
         var prefix = '';
-        if (rows[0].prefix < 1) {
+        if (!rows[0] && !rows[0].prefix) {
             prefix = ".";
         } else {
             prefix = rows[0].prefix;
