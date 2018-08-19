@@ -4,7 +4,8 @@ const client = new Discord.Client();
 const fs = require('fs');
 const snekfetch = require("snekfetch");
 
-const prefix = ".";
+
+
 
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL_TOKEN, client);
@@ -77,12 +78,19 @@ console.log(client.commands)
 
 
 client.on('message', message => {
+    if(message.channel.type === 'dm') return;
+    con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => {
+
+        var prefix = '';
+        if (rows[0].prefix < 1) {
+            prefix = ".";
+        } else {
+            prefix = rows[0].prefix;
+        }
+
 
     if(!message.content.startsWith(prefix))return;
-if(message.channel.type === 'dm') return;
-if (message.author.bot) return;
-    if (message.content.startsWith(".setprefix")) return;
-    
+if (message.author.bot) return;    
 if (talkedRecently.has(message.author.id)) {
     message.channel.send("The next user have to wait at least 5 secounds between using commands : " + message.author + "\nthe cooldown won't work for who have **ADMINSTRATOR** permission")
      .then(message => {
@@ -105,9 +113,9 @@ setTimeout(() => {
   talkedRecently.delete(message.author.id);
 }, 5000);
 }
-}    
+}
+})   
 });
-
 
 
 
@@ -118,7 +126,7 @@ setTimeout(() => {
 
 client.on("message", message => {
     if (message.author.bot) return;
-
+    let prefix = ".";
 
    if (message.isMentioned(client.user) && message.content === `<@${client.user.id}>`) {
        message.channel.send(`Current server prefix is **${prefix}**\nDo ${prefix}help to get start`);
