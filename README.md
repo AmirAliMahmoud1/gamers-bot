@@ -15,9 +15,9 @@ to support us just share Gamers bot with your friends
 ---
 # Bot commands
 
--user commands
-[] is required 
-{} is optional 
+- user commands
+- [] is required 
+- {} is optional 
 
 | command       | usage         | description  | example |
 | ------------- |:-------------:|:------------:|--------:|
@@ -35,7 +35,7 @@ to support us just share Gamers bot with your friends
 | ask | .ask | ask you random question | |
 | mcskin | .mcskin [minecraft account username] | find minecraft skins | |
 
--Hint
+- Hint
 
 to ask for adding new game to `.game` Dm the bot with a message like this
 
