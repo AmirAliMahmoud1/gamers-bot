@@ -37,11 +37,11 @@ to support us just share Gamers bot with your friends
 
 - Hint
 
-to ask for adding new game to `.game` Dm the bot with a message like this
+-- to ask for adding new game to `.game` Dm the bot with a message like this
 
-i want to add new game to .game command
-the game name is : `minecraft`
-my real name is : `zyad`
+-- i want to add new game to .game command
+-- the game name is : `minecraft`
+-- my real name is : `zyad`
 
 ---
 
