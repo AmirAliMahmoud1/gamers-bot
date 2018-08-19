@@ -3,6 +3,7 @@ const mysql = require("mysql");
 const client = new Discord.Client();
 const fs = require('fs');
 const snekfetch = require("snekfetch");
+const prefix = ".";
 
 
 
@@ -69,10 +70,7 @@ console.log(client.commands)
 
 
 client.on('message', message => {
-        con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => { 
 
-        if (rows[0].prefix < 1) prefix = ".";
-        if (rows[0].prefix > 1) prefix = rows[0].prefix;
 
 
     if(!message.content.startsWith(prefix))return;
@@ -102,7 +100,6 @@ setTimeout(() => {
 }, 5000);
 }
 }    
-                });
 });
 
 
@@ -124,17 +121,12 @@ var con = mysql.createConnection({
 
 client.on("message", message => {
     if (message.author.bot) return;
-    con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => { 
-
-        if (rows[0].prefix < 1) prefix = ".";
-        if (rows[0].prefix > 1) prefix = rows[0].prefix;
 
    if (message.isMentioned(client.user) && message.content === `<@${client.user.id}>`) {
        message.channel.send(`Current server prefix is **${prefix}**\nDo ${prefix}help to get start`);
 
    }
 
-    });
 });
 
 //reply and dm chat settings
