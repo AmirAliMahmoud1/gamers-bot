@@ -15,7 +15,7 @@ to support us just share Gamers bot with your friends
 ---
 # Bot commands
 
-- user commands  
+### user commands  
 - [] is required   
 - {} is optional   
 
@@ -41,8 +41,20 @@ to ask for adding new game to `.game` Dm the bot with a message like this
 i want to add new game to .game command  
 the game name is : `minecraft`  
 my real name is : `zyad`  
+  
+    
+### admin commands
+- [] is required   
+- {} is optional   
 
----
+| command       | usage         | description  | example |
+| ------------- |:-------------:|:------------:|--------:|
+| clear | .clear [number of mesages] | clearing spam messages | |
+| kick | .kick [member mention] | kick members | |
+| ban | .ban [member mention] | ban members | |
+| warn | .warn [member] {reason} | warn members | |
+| setprefix | .setprefix [new prefix] | change server prefix | |
+
 
 to call bot owner just DM the bot 
 
