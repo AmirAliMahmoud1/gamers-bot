@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
     fetch(url, { 
         method: 'GET',
         headers: {
-          'TRN-Api-Key': process.env.TRN-API-KEY
+          'TRN-Api-Key': process.env.TRN_API_KEY
         }
     })
         .then(res => res.json())
