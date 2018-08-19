@@ -21,19 +21,19 @@ to support us just share Gamers bot with your friends
 
 | command       | usage         | description  | example |
 | ------------- |:-------------:|:------------:|--------:|
-| help      | .help [user / admin] | showing bot commands        | test #1        |
-| avatar      | .avatar {user mention} | send your or others avatar |         |
-| invite | .invite | gives you both of bot invite link & support server invite | test# |
-| members | .members | showing server members count and their status |         |
-| server | .server | showing server info | |
-| info | .info | showing bot info | |
-| date | .date | gets current date + time | |
-| call | .call | tell you how to dm bot owners | |
-| rp | .rp [kill - slap - cry - sleep - happy]| rp commands | |
-| game | .game [game name] | give you games info | |
-| cat | .cat | MEOW Random cats | |
-| ask | .ask | ask you random question | |
-| mcskin | .mcskin [minecraft account username] | find minecraft skins | |
+| help      | .help [user / admin] | showing bot commands        | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/help.png) |
+| avatar      | .avatar {user mention} | send your or others avatar | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/avatar.png) |
+| invite | .invite | gives you both of bot invite link & support server invite | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/invite.png) |
+| members | .members | showing server members count and their status | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/members.png) |
+| server | .server | showing server info | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/server.png) |
+| info | .info | showing bot info | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/info.png) |
+| date | .date | gets current date + time | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/date.png) |
+| call | .call | tell you how to dm bot owners | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/call.png) |
+| rp | .rp [kill - slap - cry - sleep - happy]| rp commands | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/rp.png) |
+| game | .game [game name] | give you games info | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/game.png) |
+| cat | .cat | MEOW Random cats | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/cat.png) |
+| ask | .ask | ask you random question | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/ask.png) |
+| mcskin | .mcskin [minecraft account username] | find minecraft skins | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/mcskin.png) |
 
 - Hint
 
@@ -49,11 +49,11 @@ my real name is : `zyad`
 
 | command       | usage         | description  | example |
 | ------------- |:-------------:|:------------:|--------:|
-| clear | .clear [number of mesages] | clearing spam messages | |
-| kick | .kick [member mention] | kick members | |
-| ban | .ban [member mention] | ban members | |
-| warn | .warn [member] {reason} | warn members | |
-| setprefix | .setprefix [new prefix] | change server prefix | |
+| clear | .clear [number of mesages] | clearing spam messages | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/clear.png) |
+| kick | .kick [member mention] | kick members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/kick.png) |
+| ban | .ban [member mention] | ban members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/ban.png) |
+| warn | .warn [member] {reason} | warn members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/warn.png) |
+| setprefix | .setprefix [new prefix] | change server prefix | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/setprefix.png) |
 
 
 to call bot owner just DM the bot 
