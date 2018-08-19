@@ -94,5 +94,11 @@
     "group":"user",
     "desc":"ask random question",
     "usage":"ask"
+  },
+  "mcskin": {
+    "name":"mcskin",
+    "group":"user",
+    "desc":"getting mcskins",
+    "usage":"mcskin name"
   }
 }
