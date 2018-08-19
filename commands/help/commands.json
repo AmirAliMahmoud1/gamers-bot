@@ -106,5 +106,11 @@
     "group":"admin",
     "desc":"change current server prefix",
     "usage":"setprefix [new prefix here]"
+  },
+  "fstats": {
+    "name":"fstats",
+    "group":"user",
+    "desc":"getting fortnite player stats",
+    "usage":"fstats [username]"
   }
 }
