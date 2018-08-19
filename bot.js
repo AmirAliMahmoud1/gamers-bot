@@ -76,17 +76,11 @@ console.log(client.commands)
 
 
 client.on('message', message => {
-        let guildID = message.guild.id;
 
-    con.query(`SELECT * FROM prefixes WHERE id = '${guildID}'`, (err, rows) => { 
-
-        if(rows.length < 1) prefix = ".";
-        if (rows[0].prefix) prefix = rows[0].prefix;
-
-        if (err) throw err;
     if(!message.content.startsWith(prefix))return;
 if(message.channel.type === 'dm') return;
 if (message.author.bot) return;
+    if (message.content.startsWith(".setprefix")) return;
     
 if (talkedRecently.has(message.author.id)) {
     message.channel.send("The next user have to wait at least 5 secounds between using commands : " + message.author + "\nthe cooldown won't work for who have **ADMINSTRATOR** permission")
@@ -112,7 +106,7 @@ setTimeout(() => {
 }
 }    
 });
-});
+
 
 
 
