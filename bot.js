@@ -65,7 +65,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | .fstats | Try fortnite stats command'); 
+client.user.setActivity('.help | .support | support this project <3'); 
 console.log(client.commands)
 
 });
@@ -161,6 +161,7 @@ if (message.content.startsWith('.reply'))  {
 if (message.author.id === client.user.id) return;
 if (message.channel.type !== 'dm') return;
 if (message.content.startsWith('.reply')) return;
+if (message.content.startsWith('.help')) return;
 
 con.query(`SELECT * FROM blockList WHERE id = '${message.author.id}'`, (err, rows) => { 
     if (rows[0]) {
