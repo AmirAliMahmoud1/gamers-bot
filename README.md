@@ -35,7 +35,7 @@ to support us just share Gamers bot with your friends
 | ask | .ask | ask you random question | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/ask.png) |
 | mcskin | .mcskin [minecraft account username] | find minecraft skins | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/mcskin.png) |
 | fstats | .fstats [username] | getting fortnite player stats | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/fstats.png) |
-| support | .support | donate for the bot owners | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/support.png) |
+| support | .support | donate for Gamers Bot DEV. | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/support.png) |
 
 - Hint
 
