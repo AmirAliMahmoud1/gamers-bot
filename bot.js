@@ -85,7 +85,7 @@ if (talkedRecently.has(message.author.id)) {
     let args = messageArray.slice(1);
     
     let cmd = client.commands.get(command.slice(prefix.length));
-    if (cmd) { cmd.run(client, message, args, con);
+    if (cmd) { cmd.run(client, message, args);
     console.log("(" + command + ") command just used in " + message.guild.name + " server")
 if (!message.member.hasPermission("ADMINISTRATOR")){
     talkedRecently.add(message.author.id);
