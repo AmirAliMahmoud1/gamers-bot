@@ -35,6 +35,7 @@ to support us just share Gamers bot with your friends
 | ask | .ask | ask you random question | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/ask.png) |
 | mcskin | .mcskin [minecraft account username] | find minecraft skins | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/mcskin.png) |
 | fstats | .fstats [username] | getting fortnite player stats | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/fstats.png) |
+| support | .support | donate for the bot owners | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/support.png) |
 
 - Hint
 
@@ -54,7 +55,7 @@ my real name is : `zyad`
 | kick | .kick [member mention] | kick members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/kick.png) |
 | ban | .ban [member mention] | ban members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/ban.png) |
 | warn | .warn [member] {reason} | warn members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/warn.png) |
-| setprefix | .setprefix [new prefix] | change server prefix | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/setprefix.png) |
+| support | .support | | Donate for the bot DEVS. | 
 
 
 to call bot owner just DM the bot 
