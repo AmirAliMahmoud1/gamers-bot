@@ -115,7 +115,6 @@ client.on("message", message => {
        message.channel.send(`Current server prefix is **${prefix}**\nDo ${prefix}help to get start`);
 
    }
-    })
 });
 
 //reply and dm chat settings
