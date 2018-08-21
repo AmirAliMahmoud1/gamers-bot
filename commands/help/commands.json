@@ -112,5 +112,11 @@
     "group":"user",
     "desc":"getting fortnite player stats",
     "usage":"fstats [username]"
+  },
+  "support": {
+    "name":"support",
+    "group":"user",
+    "desc":"donate for bot",
+    "usage":".support"
   }
 }
