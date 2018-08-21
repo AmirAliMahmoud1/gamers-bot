@@ -55,7 +55,6 @@ my real name is : `zyad`
 | kick | .kick [member mention] | kick members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/kick.png) |
 | ban | .ban [member mention] | ban members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/ban.png) |
 | warn | .warn [member] {reason} | warn members | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/warn.png) |
-| support | .support | | Donate for the bot DEVS. | 
 
 
 to call bot owner just DM the bot 
