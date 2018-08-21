@@ -3,19 +3,9 @@ const mysql = require("mysql");
 const client = new Discord.Client();
 const fs = require('fs');
 const snekfetch = require("snekfetch");
+const prefix = ".";
 
 
-
-
-const DBL = require("dblapi.js");
-const dbl = new DBL(process.env.DBL_TOKEN, client);
-
-const con = mysql.createConnection({
-    host: process.env.SQL_HOST,
-    user: process.env.SQL_USER,
-    password: process.env.SQL_PASSWORD,
-    database: process.env.SQL_USER
-}, console.log("connected"));
 
 
 
@@ -79,14 +69,7 @@ console.log(client.commands)
 
 client.on('message', message => {
     if(message.channel.type === 'dm') return;
-    con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => {
-        var prefix = '';
-        if (!rows[0]) {
-            prefix = ".";
-        } else {
-            prefix = rows[0].prefix;
-        }
-
+    
 
     if(!message.content.startsWith(prefix))return;
 if (message.author.bot) return;    
@@ -113,7 +96,6 @@ setTimeout(() => {
 }, 5000);
 }
 }
-})   
 });
 
 
@@ -125,13 +107,7 @@ setTimeout(() => {
 
 client.on("message", message => {
     if(message.channel.type === 'dm') return;
-    con.query(`SELECT * FROM prefixes WHERE id = '${message.guild.id}'`, (err, rows) => {
-        var prefix = '';
-        if (!rows[0]) {
-            prefix = ".";
-        } else {
-            prefix = rows[0].prefix;
-        }
+
     if (message.author.bot) return;
 
 
@@ -163,10 +139,7 @@ if (message.channel.type !== 'dm') return;
 if (message.content.startsWith('.reply')) return;
 if (message.content.startsWith('.help')) return;
 
-con.query(`SELECT * FROM blockList WHERE id = '${message.author.id}'`, (err, rows) => { 
-    if (rows[0]) {
-        if (rows[0].blocked == '1') return message.channel.send("**YOU ARE BLOCKED**\n--\nyou can join the support server to ask for unblock to be able to call bot owners")
-    }
+
     const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username, message.author.avatarURL)
 .addField("The message:", message)
@@ -174,7 +147,7 @@ con.query(`SELECT * FROM blockList WHERE id = '${message.author.id}'`, (err, row
 
     client.channels.get("467207782081232920").send({embed})
 
-});
+
 });
 
 
