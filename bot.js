@@ -55,7 +55,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | custom prefixs removed because of some bugs'); 
+client.user.setActivity('.help | custom prefixes removed because of bugs it will back when i but better vps'); 
 console.log(client.commands)
 
 });
