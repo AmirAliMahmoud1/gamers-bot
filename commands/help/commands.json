@@ -101,12 +101,6 @@
     "desc":"getting mcskins",
     "usage":"mcskin name"
   },
-  "setprefix": {
-    "name":"setprefix",
-    "group":"admin",
-    "desc":"change current server prefix",
-    "usage":"setprefix [new prefix here]"
-  },
   "fstats": {
     "name":"fstats",
     "group":"user",
