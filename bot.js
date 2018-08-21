@@ -55,7 +55,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-client.user.setActivity('.help | .support | support this project <3'); 
+client.user.setActivity('.help | custom prefixs removed for some bugs'); 
 console.log(client.commands)
 
 });
