@@ -59,7 +59,8 @@ let activites = [".help", ".support | Donate for me <3"];
 client.setInterval(() => {
     let activity = Math.floor((Math.random() * activites.length))
     client.user.setActivity(activites[activity])
-    }, 5000)console.log(client.commands)
+    }, 5000);
+    console.log(client.commands)
 
 });
 
