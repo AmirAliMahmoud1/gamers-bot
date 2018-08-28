@@ -112,5 +112,11 @@
     "group":"user",
     "desc":"donate for bot",
     "usage":".support"
+  },
+  "lprofile": {
+    "name":"lprofile",
+    "group":"user",
+    "desc":"gets the league of legends profiles",
+    "usage":".lprofile [region] [summoner name]"
   }
 }
