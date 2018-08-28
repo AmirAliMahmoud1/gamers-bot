@@ -25,6 +25,19 @@ snekfetch.post(`https://bots.discord.pw/api/bots/${id}/stats`)
 
 });
 
+const DBL = require("dblapi.js");
+const dbl = new DBL(process.env.DBL_TOKEN, client);
+
+// Optional events
+dbl.on('posted', () => {
+  console.log('Server count posted!');
+})
+
+dbl.on('error', e => {
+ console.log(`Oops! ${e}`);
+});
+
+
 
 //HERasdsadsadsa
 
