@@ -36,6 +36,7 @@ to support us just share Gamers bot with your friends
 | mcskin | .mcskin [minecraft account username] | find minecraft skins | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/mcskin.png) |
 | fstats | .fstats [username] | getting fortnite player stats | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/fstats.png) |
 | support | .support | donate for Gamers Bot DEV. | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/support.png) |
+| lprofile | .lprofile [region] [summoner name] | get league of legends players profiles | [Image](https://raw.githubusercontent.com/ZezoCraft/gamers-bot/master/exampels/lprofile.png) |
 
 - Hint
 
