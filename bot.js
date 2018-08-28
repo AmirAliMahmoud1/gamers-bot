@@ -68,7 +68,7 @@ client.commands.set(props.help.name, props);
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 console.log(`on ${client.guilds.size} servers`);
-let activites = [".help", ".support | Donate for better VPS <3"];
+let activites = [".help", ".lprofile added for League of Legends players"];
 client.setInterval(() => {
     let activity = Math.floor((Math.random() * activites.length))
     client.user.setActivity(activites[activity])
