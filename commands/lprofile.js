@@ -41,7 +41,7 @@ module.exports.run = async (client, message, args) => {
 
     let url = "https://" + region + ".api.riotgames.com/lol/summoner/v3/summoners/by-name/" + message.content.split(" ").slice(2).join(' ');
 
-    let authorization = process.env.RIOT_API_KEY;
+    let authorization = "RGAPI-234f361a-bdf9-4aa6-a7a9-840ca23569ca";
 
     let currentVersion = (await fetch("https://ddragon.leagueoflegends.com/api/versions.json").then(res => res.json()).then(json => json[0]));
 
@@ -68,7 +68,7 @@ module.exports.run = async (client, message, args) => {
 
 
 
-   let champions = (await fetch("http://ddragon.leagueoflegends.com/cdn/8.16.1/data/en_US/champion.json").then(res => res.json()).then(json => json));
+   let champions = (await fetch("http://ddragon.leagueoflegends.com/cdn/" + currentVersion + "/data/en_US/champion.json").then(res => res.json()).then(json => json));
   
   
 
@@ -173,13 +173,38 @@ let summonerRank = (await fetch(`https://${region}.api.riotgames.com/lol/league/
       .then(json => json));
 
       let liveGame = "";
-      let gameTime = "";
+      let gameTimeSec = "";
+      let gameTimeMin = "";
+      let gameChampionid = "";
+      let gameChampion = "";
+
 
       if (!activeGame.gameId) {
               liveGame = "the summoner isn't playing now"
       } else {
-              gameTime = (parseInt(activeGame.gameLength) / 60) + " Mins";
-              liveGame = `**${summonerName}** is online and playing a game, this is the info\nMap: [Map photo](http://ddragon.leagueoflegends.com/cdn/${currentVersion}/img/map/map${activeGame.mapId}.png)\nGame mode: ${activeGame.gameMode}\nGame type: ${activeGame.gameType}\nGame time : ${gameTime}`;
+              gameTimeSec = (parseInt(activeGame.gameLength) / 60).toString();
+              gameTimeMin = gameTimeSec.split(".")[0] + " Mins";
+              for (let cmd in activeGame.participants) { 
+
+                if (summonerid == activeGame.participants[cmd].summonerId) {
+                    gameChampionid = activeGame.participants[cmd].championId;
+                    break;
+                }
+            
+              };
+
+              let gameChampion = "";
+
+  for (var cmd in champions.data) { 
+
+    if (gameChampionid == champions.data[cmd].key.toUpperCase()) {
+        gameChampion = champions.data[cmd].name; 
+        break;
+    }
+
+}
+        
+              liveGame = `**${summonerName}** is online and playing a game, this is the info\nPlaying as : **${gameChampion}**\nMap: [Map photo](http://ddragon.leagueoflegends.com/cdn/${currentVersion}/img/map/map${activeGame.mapId}.png)\nGame mode: ${activeGame.gameMode}\nGame type: ${activeGame.gameType}\nGame time : ${gameTimeMin}`;
       }
 
 
