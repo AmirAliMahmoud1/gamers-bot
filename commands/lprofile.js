@@ -41,7 +41,7 @@ module.exports.run = async (client, message, args) => {
 
     let url = "https://" + region + ".api.riotgames.com/lol/summoner/v3/summoners/by-name/" + message.content.split(" ").slice(2).join(' ');
 
-    let authorization = "RGAPI-500a0eff-74b8-44e2-a1a0-d99eb0bbe619";
+    let authorization = process.env.RIOT_API_KEY;
 
     let currentVersion = (await fetch("https://ddragon.leagueoflegends.com/api/versions.json").then(res => res.json()).then(json => json[0]));
 
