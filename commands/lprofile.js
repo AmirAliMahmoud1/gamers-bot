@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
     if (!args[0]) return message.channel.send("Error : I can't find the region, this is simple example\n\nExample : .lprofile [region] [summoner name]\n\nregions : BR, EUNE, EUW, JP ,KR ,LAN, LAS ,NA, OCE, TR, RU, PBE");
     if (!message.content.split(" ").slice(2).join(' ')) return message.channel.send("Error : I can't find the summoner name, this is simple example\n\nExample : .lprofile [region] [summoner name]\n\nregions : BR, EUNE, EUW, JP ,KR ,LAN, LAS ,NA, OCE, TR, RU, PBE");
     if (args[0]) {
-        if (args[0] == "br") { region = "br"
+        if (args[0] == "br") { region = "br1"
 } else
         if (args[0] == "eune") { region = "eun1"
 } else 
