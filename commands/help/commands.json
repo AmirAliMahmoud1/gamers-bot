@@ -62,7 +62,7 @@
   "ban": {
     "name":"ban",
     "group":"admin",
-    "desc":"kick peoples bot role must be the highest role",
+    "desc":"ban peoples bot role must be the highest role",
     "usage":"ban [user]"
   },
   "warn": {
