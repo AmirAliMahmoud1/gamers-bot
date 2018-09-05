@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const prefix = ".";
 
 module.exports.run = async (client, message, args) => {
 
@@ -12,10 +11,8 @@ module.exports.run = async (client, message, args) => {
 
     var msg;
     msg = parseInt();
-    message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(args[0])
-).
-    catch(console.error);
-    message.channel.send("", {
+   await message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(parseInt(args[0]) + 1));
+   let DLTmessage = await message.channel.send("", {
         embed: {
             title: "Done | messages has been deleted",
             color: 0x06DF00,
@@ -25,6 +22,8 @@ module.exports.run = async (client, message, args) => {
             }
         }
     })
+
+    DLTmessage.delete(3000)
 
 
 }
