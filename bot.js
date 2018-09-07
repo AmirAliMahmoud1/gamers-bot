@@ -21,7 +21,7 @@ snekfetch.post(`https://bots.discord.pw/api/bots/${id}/stats`)
     .then(() => console.log(`Posted to db.`))
     .catch((e) => console.error(e));
     
-    guild.owner.send("Hi, you or someone else added me to **" + guild.name + "**\n\nyou can use this channel to dm the owner(if you sent a message here it resend to the bot owner)\n\nYou can see bot commands using the .help command (.help .user) - (.help admin)\n\nat the end you can join the support server using the next invite\n\nhttps://discord.gg/DjTubAX")
+    guild.owner.send("Hi, you or someone else [is admin or has **MANAGE_SERVER**] added me to **" + guild.name + "**\n\nyou can use this channel to dm the owner(if you sent a message here it resend to the bot owner)\n\nYou can see bot commands using the .help command (.help .user) - (.help admin)\n\nat the end you can join the support server using the next invite\n\nhttps://discord.gg/DjTubAX")
 
 });
 
@@ -71,7 +71,7 @@ console.log(`on ${client.guilds.size} servers`);
     //infooooooooooooo
 
 
-let activites = [".help", "\".support\" Donate for bot owners"];
+let activites = [".help", "0.9 released || Glitches fixed"];                    //HHHHHHHEEEEEEEEERRRRRRRRRREEEEE
 
 
     //infoooooooooooooooooooo
