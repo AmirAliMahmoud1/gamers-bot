@@ -183,7 +183,8 @@ let summonerRank = (await fetch(`https://${region}.api.riotgames.com/lol/league/
               liveGame = "the summoner isn't playing now"
       } else {
               gameTimeSec = (parseInt(activeGame.gameLength) / 60).toString();
-              gameTimeMin = gameTimeSec.split(".")[0] + " Mins";
+              gameTimesecounds = (parseInt(activeGame.gameLength % 60))
+              gameTimeMin = "**" + gameTimeSec.split(".")[0] + ":" + gameTimesecounds +"** Mins";
               for (let cmd in activeGame.participants) { 
 
                 if (summonerid == activeGame.participants[cmd].summonerId) {
