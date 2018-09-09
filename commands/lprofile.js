@@ -4,8 +4,8 @@ const snekfetch = require("snekfetch");
 
 module.exports.run = async (client, message, args) => {
 
-    if (!args[0]) return message.channel.send("Error : I can't find the region, this is simple example\n\nExample : .lprofile [region] [summoner name]\n\nregions : BR, EUNE, EUW, JP ,KR ,LAN, LAS ,NA, OCE, TR, RU, PBE");
-    if (!message.content.split(" ").slice(2).join(' ')) return message.channel.send("Error : I can't find the summoner name, this is simple example\n\nExample : .lprofile [region] [summoner name]\n\nregions : BR, EUNE, EUW, JP ,KR ,LAN, LAS ,NA, OCE, TR, RU, PBE");
+    if (!args[0]) return message.channel.send("Error : I can't find the region, this is simple example\n\nExample : .lprofile [region] [summoner name]\n\nregions : ``br``, ``eune``, ``euw``, `` jp`` , ``kr`` , ``lan``, ``las`` , ``na``, ``oce``, ``tr``, ``ru``, ``pbe``");
+    if (!message.content.split(" ").slice(2).join(' ')) return message.channel.send("Error : I can't find the summoner name, this is simple example\n\nExample : .lprofile [region] [summoner name]\n\nregions : ``br``, ``eune``, ``euw``, `` jp`` , ``kr`` , ``lan``, ``las`` , ``na``, ``oce``, ``tr``, ``ru``, ``pbe``");
     if (args[0]) {
         if (args[0] == "br") { region = "br1"
 } else
@@ -36,7 +36,7 @@ module.exports.run = async (client, message, args) => {
         if (args[0] == "europe") { region = "europe"
 } else
         if (args[0] == "asia") { region = "asia"
-} else message.channel.send("Error : wrong region, check this list\n\nregions : BR, EUNE, EUW, JP ,KR ,LAN, LAS ,NA, OCE, TR, RU, PBE");
+} else return message.channel.send("Error : wrong region, check this list\n\nregions : ``br``, ``eune``, ``euw``, `` jp`` , ``kr`` , ``lan``, ``las`` , ``na``, ``oce``, ``tr``, ``ru``, ``pbe``");
     }
 
     let url = "https://" + region + ".api.riotgames.com/lol/summoner/v3/summoners/by-name/" + message.content.split(" ").slice(2).join(' ');
@@ -57,7 +57,7 @@ module.exports.run = async (client, message, args) => {
         
     }).then(res => res.json())
       .then(json => json));
-      if (!summoner.id) return message.channel.send(`ERROR: can't find the summoner in **${args[0]}** region\n\nplease check your name and the regio, this is regions list\n\nregions : BR, EUNE, EUW, JP ,KR ,LAN, LAS ,NA, OCE, TR, RU, PBE`)
+      if (!summoner.id) return message.channel.send(`ERROR: can't find the summoner in **${args[0]}** region\n\nplease check your name and the regio, this is regions list\n\nregions : ``br``, ``eune``, ``euw``, `` jp`` , ``kr`` , ``lan``, ``las`` , ``na``, ``oce``, ``tr``, ``ru``, ``pbe```)
 
    let summonerlvl = summoner.summonerLevel;
    let summonerid = summoner.id;
