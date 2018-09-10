@@ -1,5 +1,5 @@
 [minecraft], [leagueoflegends], [roblox], [fortnite], [pubg], [csgo], [mta],
-[respawnables], [dota2]
+[respawnables], [dota2], [worldoftanks]
 
 **ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ**
 .game [gamename] | for game info
