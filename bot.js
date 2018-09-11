@@ -91,8 +91,8 @@ client.setInterval(() => {
 
 
 client.on('message', message => {
-    if (message.channel.type === 'dm') return;
-    if (message.content.startsWith(".help")) return;    
+    if (message.channel.type == 'dm' && message.content.startsWith(".help")) return message.channel.send("Don't use bot commands here, use servers instead")
+    if (message.channel.type == 'dm') return;    
 
     if(!message.content.startsWith(prefix))return;
 if (message.author.bot) return;    
