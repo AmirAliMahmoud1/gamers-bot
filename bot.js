@@ -93,8 +93,9 @@ client.setInterval(() => {
 client.on('message', message => {
     if(message.channel.type === 'dm') {
         
-        if (message.content.startsWith(".help") || message.content.startsWith("(.help)"))
-
+        if (message.content.startsWith(".help") || message.content.startsWith("(.help)")) {
+ message.channel.send("use bot commands in servers not here")
+        } else return;
     }
     
 
