@@ -91,7 +91,11 @@ client.setInterval(() => {
 
 
 client.on('message', message => {
-    if(message.channel.type === 'dm') return;
+    if(message.channel.type === 'dm') {
+        
+        if (message.content.startsWith(".help") || message.content.startsWith("(.help)"))
+
+    }
     
 
     if(!message.content.startsWith(prefix))return;
