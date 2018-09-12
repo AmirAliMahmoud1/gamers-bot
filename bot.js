@@ -71,7 +71,7 @@ console.log(`on ${client.guilds.size} servers`);
     //infooooooooooooo
 
 
-let activites = [".help", "0.9 released || Glitches fixed"];                    //HHHHHHHEEEEEEEEERRRRRRRRRREEEEE
+let activites = [".help", "\".support\" Donate for bot owners"];                    //HHHHHHHEEEEEEEEERRRRRRRRRREEEEE
 
 
     //infoooooooooooooooooooo
