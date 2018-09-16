@@ -71,7 +71,7 @@ console.log(`on ${client.guilds.size} servers`);
     //infooooooooooooo
 
 
-let activites = [".help", "\".support\" Donate for bot owners"];                    //HHHHHHHEEEEEEEEERRRRRRRRRREEEEE
+let activites = [".help", ".mcskin command fixed ^^"];                    //HHHHHHHEEEEEEEEERRRRRRRRRREEEEE
 
 
     //infoooooooooooooooooooo
