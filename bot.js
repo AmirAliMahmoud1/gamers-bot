@@ -162,12 +162,24 @@ if (message.content.startsWith('.reply')) return;
 if (message.content.startsWith('.help')) return;
 
 
+if (message.attachments.size <= 0) {
+
     const embed = new Discord.RichEmbed()
 .setAuthor(message.author.username, message.author.avatarURL)
 .addField("The message:", message)
 .addField("The id : " + message.author.id, message.author.tag)
-
     client.channels.get("467207782081232920").send({embed})
+
+} else {
+
+	    const embed = new Discord.RichEmbed()
+.setAuthor(message.author.username, message.author.avatarURL)
+.addField("The message:", `${message}\n\n\`\`with next file\`\``)
+.addField("The id : " + message.author.id, message.author.tag)
+    client.channels.get("467207782081232920").send({embed})
+    client.channels.get("467207782081232920").send(message.attachments.map(m => m.url))
+
+}
 
 
 });
