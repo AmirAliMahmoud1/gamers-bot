@@ -6,9 +6,15 @@ module.exports.run = async (client, message, args) => {
     if (!args[0]) return message.channel.send("Please insert the name \nExample : ``.mcskin notch``");
 
 
-    let userinfo = (await fetch("https://api.mojang.com/users/profiles/minecraft/" + args[0]).then(res => res.json()).then(json => json))
+    fetch("https://api.mojang.com/users/profiles/minecraft/" + args[0]).then(res => {
+
+
+    	if (!res.json().id) return message.channel.send("Can't find ``" + args[0] + "`` in mojang files, maybe it's wrong name !");
+
+    	let userinfo = res.json();
+
     let useruuid = userinfo.id
-    if (!useruuid) return message.channel.send("Can't find **" + args[0] + "** in mojang files, maybe it's wrong name !");
+    if (!useruuid || !userinfo) return message.channel.send("Can't find ``" + args[0] + "`` in mojang files, maybe it's wrong name !");
  
 
     let skin = ("https://mc-heads.net/body/" + useruuid)
@@ -27,7 +33,7 @@ message.channel.send({embed});
 
 
 
-    
+    });
 }
 
 module.exports.help = {
