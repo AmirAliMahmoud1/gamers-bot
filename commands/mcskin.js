@@ -9,8 +9,6 @@ module.exports.run = async (client, message, args) => {
     fetch("https://api.mojang.com/users/profiles/minecraft/" + args[0]).then(res => {
 
 
-    	if (!res.json().id) return message.channel.send("Can't find ``" + args[0] + "`` in mojang files, maybe it's wrong name !");
-
     	let userinfo = res.json();
 
     let useruuid = userinfo.id
