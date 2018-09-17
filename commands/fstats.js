@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
 
     if (!args[0]) return message.channel.send("Error : can't find the name !\nExample : .fnstats **name**")
     if (args[1]){
-        if (args[1] != "pc" && args[1] != "xbl" && args[1] != "psn") return message.channel.send("can't find " + args[1] + " platform\n\nPlatforms: pc, xbl, psn")
+        if (args[1] != "pc" && args[1] != "xbl" && args[1] != "psn") return message.channel.send("can't find ``" + args[1] + "`` platform\n\nPlatforms: pc, xbl, psn")
     }
          var platform = ""
     if (!args[1]) {
