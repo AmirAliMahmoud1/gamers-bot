@@ -57,7 +57,7 @@ module.exports.run = async (client, message, args) => {
         
     }).then(res => res.json())
       .then(json => json));
-      if (!summoner.id) return message.channel.send("ERROR: can't find the summoner in **" + args[0] + "** region\n\nplease check your name and the region, this is regions list\n\nregions : ``br``, ``eune``, ``euw``, `` jp`` , ``kr`` , ``lan``, ``las`` , ``na``, ``oce``, ``tr``, ``ru``, ``pbe``")
+      if (!summoner.id) return message.channel.send("ERROR: can't find the summoner in ``" + args[0] + "`` region\n\nplease check your name and the region, this is regions list\n\nregions : ``br``, ``eune``, ``euw``, `` jp`` , ``kr`` , ``lan``, ``las`` , ``na``, ``oce``, ``tr``, ``ru``, ``pbe``")
    let summonerlvl = summoner.summonerLevel;
    let summonerid = summoner.id;
    let summonerName = summoner.name;
