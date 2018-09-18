@@ -149,7 +149,7 @@ if (message.content.startsWith('.reply'))  {
     let messageArray = message.content.split(" ");
     let command = messageArray[0];
     let args = messageArray.slice(1);
-    if (message.author.id !== '269132764576481282' && message.author.id !== '405436409831227404') return message.reply(":x: sorry this command is just for bot owner")
+    if (message.author.id !== '269132764576481282' && message.author.id !== '405436409831227404' && message.author.id !== '427771343661170688') return message.reply(":x: sorry this command is just for bot owner")
     if (!args[0]) return message.channel.send("please enter the user id")
     if (!args[1]) return message.channel.send("please enter the message")
     if (!client.users.get(args[0])) return message.channel.send("Wrong id maybe this user not in mutual servers with this bot")
